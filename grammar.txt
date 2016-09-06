@@ -1,0 +1,17 @@
+Expression:
+    Term
+    Term "+" Expression
+    Term "-" Expression
+
+Term:
+    Primary
+    Term "*" Primary
+    Term "/" Primary
+    Term "%" Primary
+
+Primary:
+    Number
+    "(" Expression ")"
+
+Number:
+    floating-point-literal
